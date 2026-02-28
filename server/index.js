@@ -13,10 +13,12 @@ const app = express()
 app.get("/", (req, res) => {
   res.send("Backend is running 🚀");
 });
+
 app.use(cors({
-    origin:"https://three-interviewiq-client-b41q.onrender.com",
-    credentials:true
+    origin: ["http://localhost:5173", "https://three-interviewiq-client-b41q.onrender.com"],
+    credentials: true
 }))
+
 
 app.use(express.json())
 app.use(cookieParser())
