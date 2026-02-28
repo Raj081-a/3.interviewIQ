@@ -6,8 +6,8 @@ import { createOrder, verifyPayment } from "../controllers/payment.controller.js
 
 const paymentRouter = express.Router()
 
-paymentRouter.post("/order" , isAuth , createOrder )
-paymentRouter.post("/verify" , isAuth , verifyPayment )
+paymentRouter.post("/order"  , createOrder )
+paymentRouter.post("/verify"  , verifyPayment )
 
 
 export default paymentRouter
