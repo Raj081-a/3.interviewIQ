@@ -14,7 +14,7 @@ app.get("/", (req, res) => {
   res.send("Backend is running 🚀");
 });
 app.use(cors({
-    origin:"http://localhost:5173",
+    origin:"https://three-interviewiq-client-b41q.onrender.com",
     credentials:true
 }))
 
