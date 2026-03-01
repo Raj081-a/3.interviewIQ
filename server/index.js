@@ -15,7 +15,7 @@ app.get("/", (req, res) => {
 });
 
 app.use(cors({
-    origin: ["http://localhost:5173", "https://three-interviewiq-client-b41q.onrender.com"],
+    origin: "https://three-interviewiq-client-b41q.onrender.com",
     credentials: true
 }))
 
